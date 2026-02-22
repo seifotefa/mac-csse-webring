@@ -1,5 +1,5 @@
 # McMaster CS & Software Engineering Webring
-
+## PLEASE MAKE SURE TO DO BOTH STEPS TO ENHANCE THE RING EXPERIENCE
 ## How to join the webring
 
 1. Open a PR
