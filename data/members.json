@@ -65,6 +65,17 @@
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/pavlos-defoort/"
       }
+    },
+    {
+      "name": "Aditya Tripuraneni",
+      "year": 2027,
+      "program": "Software Engineering",
+      "website": "https://aditya-website-xi.vercel.app/",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/adityat04/"
+      }
     }
   ]
 }
