@@ -43,6 +43,17 @@
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/ameya-g"
       }
+    },
+    {
+      "name": "Pavlos Defoort",
+      "year": 2027,
+      "program": "CS",
+      "website": "https://pavlosdefoort.me/",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/pavlos-defoort/"
+      }
     }
   ]
 }
