@@ -76,6 +76,17 @@
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/adityat04/"
       }
+    },
+    {
+      "name": "Thomas Plagakis",
+      "year": 2027,
+      "program": "CS",
+      "website": "https://plagakit.github.io/",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/tplagakis/"
+      }
     }
   ]
 }
