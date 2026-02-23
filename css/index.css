@@ -6,11 +6,12 @@ body {
   font-family: 'DM Sans', system-ui, sans-serif;
 }
 
-/* White background; prevent horizontal scroll from watermark */
+/* McMaster page: white background, maroon/gold/grey palette */
 .bg-page {
   background: #fff;
   overflow-x: hidden;
 }
+
 
 /* McMaster crest: right -37%, left edge under "Join the webring" / table; not cropped, no mobile rules */
 .bg-logo-watermark {
@@ -35,6 +36,34 @@ body {
   object-fit: contain;
   object-position: right center;
   opacity: 0.05;
+}
+
+/* Watermark spans full content section (list + ring), bleeds into ring background */
+.content-section {
+  position: relative;
+}
+
+.content-watermark.bg-logo-watermark {
+  position: absolute;
+  inset: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-watermark.bg-logo-watermark img {
+  opacity: 0.06;
+  object-position: center center;
+}
+
+.content-panel {
+  position: relative;
+  z-index: 1;
 }
 
 .member-row {
@@ -87,3 +116,38 @@ details summary::-webkit-details-marker {
 .heading-tight {
   letter-spacing: -0.02em;
 }
+
+/* Orbit box: no grid, clean background */
+.ring-orbit-body {
+  background: #fff;
+}
+
+/* Ring rotation: alternating directions */
+@keyframes ring-rotate-cw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes ring-rotate-ccw {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+#ring-orbit-container .ring-rotate-cw {
+  transform-origin: 50% 50%;
+  animation: ring-rotate-cw 120s linear infinite;
+}
+#ring-orbit-container .ring-rotate-ccw {
+  transform-origin: 50% 50%;
+  animation: ring-rotate-ccw 120s linear infinite;
+}
+
+/* Pointer on orbit nodes */
+#ring-orbit-container circle[pointer-events="auto"] {
+  cursor: pointer;
+}
+
+/* Content panels: McMaster colors, ring confined to panel size */
+.content-panel-label {
+  color: #fff;
+  background: #7A003C;
+}
+

@@ -9,16 +9,9 @@ const highlightedNodeColor = "#7A003C";
 const defaultEdgeColor = "#e4e4e7";
 const chartBgColor = "#faf8f8";
 
+// Disabled: ring orbit (ring-orbit.js) is the only visualization. This D3 force graph is not used.
 function checkIfGraphNeeded() {
-  if (getSites().length === 0) return;
-
-  if (window.innerWidth < 640 && !mobileExists) {
-    mobileExists = true;
-    makeGraph("chart-container-mobile");
-  } else if (window.innerWidth > 640 && !desktopExists) {
-    desktopExists = true;
-    makeGraph("chart-container");
-  }
+  return; // do not render — avoid overlapping with createRingOrbit
 }
 
 function makeGraph(containerId) {

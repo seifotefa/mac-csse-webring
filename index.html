@@ -30,9 +30,9 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/index.css" />
 </head>
-<body class="font-sans antialiased text-[#2d3439] min-h-screen bg-page">
-  <header class="relative z-10 border-b border-maroon-600/15 bg-white/95 backdrop-blur-sm sticky top-0">
-    <div class="max-w-4xl px-4 sm:px-6 py-3.5 flex items-center gap-3">
+<body class="font-sans antialiased text-macgrey-600 min-h-screen bg-page">
+  <header class="relative z-10 border-b border-maroon-600/20 bg-white/95 backdrop-blur-sm fixed top-0 left-0 right-0 w-full">
+    <div class="w-full px-4 sm:px-6 lg:px-10 py-3.5 flex items-center gap-3">
       <span class="text-maroon-600 text-xl font-light select-none" aria-hidden="true">&lt;</span>
       <img src="assets/Uni_mcmaster_logo.svg.png" alt="McMaster University" class="h-11 w-auto" />
       <span class="text-maroon-600 text-xl font-light select-none" aria-hidden="true">&gt;</span>
@@ -40,36 +40,32 @@
     </div>
   </header>
 
-  <main class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
-    <!-- McMaster crest watermark: overlaps right side of content, behind button/table -->
-    <div class="bg-logo-watermark" aria-hidden="true">
-      <img src="assets/Uni_mcmaster_logo.svg.png" alt="" />
-    </div>
-
-    <!-- Hero -->
-    <section class="relative z-10 mb-12 rounded-2xl py-10 px-6 sm:py-12 text-center">
-      <h1 class="font-condensed text-3xl sm:text-4xl font-bold text-maroon-600 tracking-tight heading-tight mb-4">
+  <div class="pt-[4.5rem] flex flex-col min-h-screen">
+  <main class="relative z-10 w-full flex-1">
+    <!-- Full width: information (bigger title and text, more width) -->
+    <section class="w-full px-4 sm:px-6 lg:px-10 py-6 lg:py-8 text-center">
+      <h1 class="font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-maroon-600 tracking-tight heading-tight mb-4">
         McMaster CS, Computer & Software Engineering Webring
       </h1>
-      <p class="text-lg text-macgrey-600 max-w-xl mx-auto leading-relaxed">
+      <p class="text-xl text-macgrey-600 max-w-3xl mx-auto leading-relaxed">
         A directory of McMaster Computer Science, Computer Engineering, and Software Engineering students and alumni.
       </p>
-      <p class="mt-3 text-macgrey-500 text-sm max-w-lg mx-auto">
+      <p class="mt-3 text-macgrey-500 text-base max-w-2xl mx-auto">
         Check out McMaster students shaping the future of technology, computing and software. Discover their projects, startups, work, and more.
       </p>
-      <p class="mt-3 text-macgrey-500 text-sm max-w-lg mx-auto italic">
-        Want to be added to the webring? Open a <a href="https://github.com/seifotefa/mac-csse-webring" class="text-maroon-600 underline">pull request</a> to add your site to <code class="bg-macgrey-300/20 px-1 rounded">data/members.json</code>.
+      <p class="mt-3 text-macgrey-500 text-base max-w-2xl mx-auto italic">
+        Want to be added to the webring? Open a <a href="https://github.com/seifotefa/mac-csse-webring" class="text-maroon-600 hover:underline">pull request</a> to add your site to <code class="bg-maroon-100/50 px-1 rounded text-maroon-600">data/members.json</code>.
       </p>
     </section>
 
-    <!-- Search + CTA -->
-    <section class="relative z-10 mb-8">
-      <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+    <!-- Full width: search + CTA -->
+    <section class="w-full px-4 sm:px-6 lg:px-10 pb-6">
+      <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center max-w-2xl mx-auto">
         <input
           type="text"
           id="search"
           placeholder="Search by name, year, or topic..."
-          class="search-input flex-1 w-full px-4 py-2.5 rounded-lg border border-macgrey-300/40 bg-white text-[#2d3439] placeholder-macgrey-400 transition-all text-sm"
+          class="search-input flex-1 w-full px-4 py-2.5 rounded-lg border border-macgrey-300/50 bg-white text-macgrey-600 placeholder-macgrey-400 transition-all text-sm"
         />
         <a
           href="https://github.com/seifotefa/mac-csse-webring"
@@ -82,38 +78,63 @@
       </div>
     </section>
 
-    <!-- Directory: table with header, rows lined together -->
-    <section class="relative z-10 mx-auto max-w-3xl" id="webring-section" aria-label="Webring members">
-      <table class="w-full text-left text-sm border-collapse">
-        <thead>
-          <tr class="border-b-2 border-maroon-600/20 bg-maroon-600/8 text-maroon-600 font-semibold">
-            <th class="py-2.5 pr-3">Program</th>
-            <th class="py-2.5 pr-3">Year</th>
-            <th class="py-2.5 pr-3">Name</th>
-            <th class="py-2.5 pr-3">Website</th>
-            <th class="py-2.5 pl-2">Socials</th>
-          </tr>
-        </thead>
-        <tbody id="webring-list" class="divide-y divide-maroon-600/10"></tbody>
-      </table>
+    <!-- Main content: centered max 1200px, two equal halves -->
+    <section class="content-section w-full max-w-[1800px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row gap-0 min-h-[400px]">
+      <!-- McMaster logo bleeds across both halves -->
+      <div class="bg-logo-watermark content-watermark" aria-hidden="true">
+        <img src="assets/Uni_mcmaster_logo.svg.png" alt="" />
+      </div>
+
+      <!-- Left half: list, centered table max 600px, top aligned -->
+      <div class="content-panel lg:w-1/2 flex flex-col border-t border-maroon-600/20 bg-gold-100/30 overflow-hidden min-h-[320px] lg:min-h-[420px]">
+        <div class="content-panel-label font-semibold text-xs tracking-wider uppercase px-4 py-2 border-b border-maroon-600/20 bg-maroon-600 text-white">
+          Members
+        </div>
+        <div class="relative flex-1 min-h-0 overflow-auto flex justify-center pt-4 pb-6">
+          <div class="w-[80%] max-w-[600px] px-2">
+            <table class="w-full text-left text-base border-collapse text-macgrey-600" id="webring-section" aria-label="Webring members">
+              <thead>
+                <tr class="border-b-2 border-maroon-600/25 S text-maroon-600 font-semibold">
+                  <th class="py-3 pr-3">Program</th>
+                  <th class="py-3 pr-3">Year</th>
+                  <th class="py-3 pr-3">Name</th>
+                  <th class="py-3 pr-3">Website</th>
+                  <th class="py-3 pl-2">Socials</th>
+                </tr>
+              </thead>
+              <tbody id="webring-list" class="divide-y divide-transparent"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right half: square same width as list (600px), ring scales inside, logo bleeds -->
+      <div class="content-panel lg:w-1/2 flex flex-col border-t lg:border-l border-transparent bg-gold-100/30 min-h-[320px] lg:min-h-[420px]">
+        <div class="content-panel-label font-semibold text-xs tracking-wider uppercase px-4 py-2 border-b border-maroon-600/20 bg-maroon-600 text-white">
+          Rings
+        </div>
+        <div class="flex-1 flex items-center justify-center min-h-0 min-w-0 p-4">
+          <div id="ring-orbit-container" class="ring-square w-full max-w-[600px] aspect-square shrink-0" aria-hidden="true"></div>
+        </div>
+      </div>
     </section>
 
-    <!-- What's a webring? dropdown (expand in place, no popup) -->
-    <section class="relative z-10 mt-12 mx-auto max-w-2xl px-4">
-      <details class="group">
+    <!-- Full width: What's a webring? -->
+    <section class="w-full px-4 sm:px-6 lg:px-10 py-6">
+      <details class="group max-w-2xl mx-auto">
         <summary class="cursor-pointer list-none font-medium text-maroon-600 hover:underline flex items-center gap-2">
           <span class="inline-block transition-transform group-open:rotate-90">▶</span>
           What's a webring?
         </summary>
-        <div class="mt-3 text-macgrey-600 text-sm leading-relaxed border-l-2 border-gold-600/40 pl-5">
-          <p>A webring is a collection of websites linked together in a ring. Each site has links to the previous and next site, so visitors can move through the ring. This directory lists McMaster CS &amp; SE students and alumni who share their sites and portfolios. Joining is free: add your site via a pull request to the repo.</p>
+        <div class="mt-2 text-macgrey-600 text-sm leading-relaxed border-l-2 border-gold-600/50 pl-4">
+          <p>A webring is a collection of websites linked together in a ring. Each site has links to the previous and next site, so visitors can move through the ring. This directory lists McMaster CS, CE &amp; SE students and alumni who share their sites and portfolios. Joining is free: add your site via a pull request to the repo.</p>
         </div>
       </details>
     </section>
   </main>
 
-  <footer class="border-t border-maroon-600/10 mt-16 py-10 bg-gold-100/40">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+  <footer class="border-t border-maroon-600/20 py-8 bg-gold-100/60 w-full">
+    <div class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 text-center">
       <p class="text-macgrey-600 font-medium">Built by McMaster CS & SE students</p>
       <p class="mt-2 text-macgrey-500 text-sm">
         <a href="https://mac-csse-webring.vercel.app/" class="text-maroon-600 hover:underline">Webring</a>
@@ -122,9 +143,10 @@
         · Add your site via a pull request to <code class="bg-maroon-100 px-1.5 py-0.5 rounded text-maroon-600 text-xs">data/members.json</code>
       </p>
       <p class="mt-2 text-macgrey-400 text-xs">This is an unofficial project. We are not affiliated with McMaster University.</p>
-      <p class="mt-2 text-macgrey-400 text-xs">McMaster University · Hamilton, Ontario · Faculty of Engineering</p>
+      <p class="mt-2 text-macgrey-400 text-xs">McMaster University · Hamilton, Ontario </p>
     </div>
   </footer>
+  </div>
 
   <script>
     window.webringData = { sites: [] };
@@ -142,5 +164,7 @@
       });
   </script>
   <script type="module" src="js/script.js"></script>
+  <!-- Only ring orbit visualization (ring-orbit.js). Do not add d3-ring-chart.js here. -->
+  <script type="module" src="js/ring-orbit.js"></script>
 </body>
 </html>
