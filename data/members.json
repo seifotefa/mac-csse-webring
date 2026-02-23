@@ -69,7 +69,7 @@
     {
       "name": "Aditya Tripuraneni",
       "year": 2027,
-      "program": "Software Engineering",
+      "program": "SWE",
       "website": "https://aditya-website-xi.vercel.app/",
       "links": {
         "instagram": "",
@@ -96,6 +96,16 @@
         "instagram": "",
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/goshanrajgovindaraj/"
+      },
+      {
+      "name": "Adam Meddah",
+      "year": 2028,
+      "program": "CS",
+      "website": "https://adammeddah.com",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/adammeddah/"
       }
     }
   ]
