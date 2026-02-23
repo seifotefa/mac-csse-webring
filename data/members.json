@@ -53,9 +53,9 @@
         "instagram": "",
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/liyu-xiao-593176206/"
-       }
-      },
-      {
+      }
+    },
+    {
       "name": "Pavlos Defoort",
       "year": 2027,
       "program": "CS",
@@ -75,6 +75,17 @@
         "instagram": "",
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/adityat04/"
+      }
+    },
+    {
+      "name": "Goshanraj Govindaraj",
+      "year": 2028,
+      "program": "CS",
+      "website": "https://goshanraj.ca",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/goshanrajgovindaraj/"
       }
     }
   ]
