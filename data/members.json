@@ -12,6 +12,40 @@
       }
     },
     {
+      "name": "Ameya Gupta",
+      "year": 2029,
+      "program": "CS",
+      "website": "https://ameyagupta.netlify.app",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/ameya-g"
+      }
+    },
+      
+    {
+      "name": "Thomas Plagakis",
+      "year": 2027,
+      "program": "CS",
+      "website": "https://plagakit.github.io/",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/tplagakis/"
+       }
+    },
+    {
+      "name": "Goshanraj Govindaraj",
+      "year": 2028,
+      "program": "CS",
+      "website": "https://goshanraj.ca",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/goshanrajgovindaraj/"
+       }
+      },
+    {
       "name": "Richard Motorgeanu",
       "year": 2027,
       "program": "CS",
@@ -34,17 +68,6 @@
       }
     },
     {
-      "name": "Ameya Gupta",
-      "year": 2029,
-      "program": "CS",
-      "website": "https://ameyagupta.netlify.app",
-      "links": {
-        "instagram": "",
-        "twitter": "",
-        "linkedin": "https://www.linkedin.com/in/ameya-g"
-      }
-    },
-    {
       "name": "Liyu Xiao",
       "year": 2028,
       "program": "CS",
@@ -54,7 +77,7 @@
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/liyu-xiao-593176206/"
        }
-      },
+     },
       {
       "name": "Pavlos Defoort",
       "year": 2027,
@@ -78,28 +101,6 @@
       }
     },
     {
-      "name": "Thomas Plagakis",
-      "year": 2027,
-      "program": "CS",
-      "website": "https://plagakit.github.io/",
-      "links": {
-        "instagram": "",
-        "twitter": "",
-        "linkedin": "https://www.linkedin.com/in/tplagakis/"
-       }
-      },
-      {
-      "name": "Goshanraj Govindaraj",
-      "year": 2028,
-      "program": "CS",
-      "website": "https://goshanraj.ca",
-      "links": {
-        "instagram": "",
-        "twitter": "",
-        "linkedin": "https://www.linkedin.com/in/goshanrajgovindaraj/"
-       }
-      },
-      {
       "name": "Adam Meddah",
       "year": 2028,
       "program": "CS",
