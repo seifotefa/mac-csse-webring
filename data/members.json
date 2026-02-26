@@ -78,8 +78,19 @@
         "linkedin": "https://www.linkedin.com/in/liyu-xiao-593176206/"
        }
      },
+     {
+      "name": "Faaz Shaikh",
+      "year": 2028,
+      "program": "CS",
+      "website": "https://faazs.vercel.app",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/faazwshaikh"
+       }
+     },
       {
-      "name": "Pavlos Defoort",
+      "b name": "Pavlos Defoort",
       "year": 2027,
       "program": "CS",
       "website": "https://pavlosdefoort.me",
