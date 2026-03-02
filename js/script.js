@@ -3,7 +3,7 @@ import { fuzzyMatch, formatUrl } from "./helpers.js";
 let logConsoleMessage = () => {
   console.log(
     "%c👋 Hey there" +
-      "\n\n%cWhy not add your site to the McMaster CS & SE webring? Open a pull request on the repo.",
+      "\n\n%cWhy not add your site to the mcmaster webring? Open a pull request on the repo.",
     "font-size: 16px; font-weight: bold; color: #7A003C;",
     "font-size: 13px; color: #495965;"
   );
