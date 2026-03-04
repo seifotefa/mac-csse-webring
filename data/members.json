@@ -121,6 +121,28 @@
         "twitter": "",
         "linkedin": "https://www.linkedin.com/in/adammeddah/"
       }
+    },
+    {
+      "name": "Hayden Choi",
+      "year": 2028,
+      "program": "CS",
+      "website": "https://haydenchoi.com/",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/hayden-choi9/"
+      }
+    },
+    {
+      "name": "Ayman Fouad",
+      "year": 2026,
+      "program": "CS",
+      "website": "https://ayman.fyi/",
+      "links": {
+        "instagram": "",
+        "twitter": "https://x.com/aymanfsm",
+        "linkedin": "https://www.linkedin.com/in/aymanfsm/"
+      }
     }
   ]
 }
