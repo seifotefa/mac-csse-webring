@@ -1,6 +1,17 @@
 {
   "sites": [
     {
+      "name": "Muhammad Hasan",
+      "year": 2026,
+      "program": "Engineering",
+      "website": "https://hasan-ston.github.io/",
+      "links": {
+        "instagram": "",
+        "twitter": "https://x.com/0xseifo",
+        "linkedin": "https://www.linkedin.com/in/muhammad-hasan-139064379/"
+      }
+    },
+    {
       "name": "Seif Otefa",
       "year": 2028,
       "program": "CS",
