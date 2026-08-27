@@ -176,6 +176,17 @@
         "twitter": "https://x.com/SubodhThallada",
         "linkedin": "https://www.linkedin.com/in/subodh-thallada/"
       }
+    },
+    {
+      "name": "Rayan Nasrallah",
+      "year": 2027,
+      "program": "ENG",
+      "website": "https://rayannasrallah.com/",
+      "links": {
+        "instagram": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/rayannasrallah/"
+      }
     }
   ]
 }
